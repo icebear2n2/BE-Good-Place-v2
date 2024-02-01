@@ -33,6 +33,8 @@ public enum ErrorCode {
     STORE_NOT_FOUND(HttpStatus.NOT_FOUND, "Store not found."),
     REVIEW_NOT_FOUND(HttpStatus.NOT_FOUND, "Review not found."),
     COMMENTS_NOT_FOUND(HttpStatus.NOT_FOUND, "Comments not found."),
+    RECOMMEND_NOT_FOUND(HttpStatus.NOT_FOUND, "Recommend not found."),
+    LIKE_NOT_FOUND(HttpStatus.NOT_FOUND, "Like not found."),
     REVIEW_CREATION_FAILED(HttpStatus.BAD_REQUEST, "Review creation failed."),
     REVIEW_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Review retrieval failed."),
     REVIEW_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Review update failed."),
@@ -45,6 +47,14 @@ public enum ErrorCode {
     STORE_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Store retrieval failed."),
     STORE_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Store update failed."),
     STORE_DELETION_FAILED(HttpStatus.BAD_REQUEST, "Store deletion failed."),
+    RECOMMEND_CREATION_FAILED(HttpStatus.BAD_REQUEST, "Recommend creation failed."),
+    RECOMMEND_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Recommend retrieval failed."),
+    RECOMMEND_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Recommend update failed."),
+    RECOMMEND_DELETION_FAILED(HttpStatus.BAD_REQUEST, "Recommend deletion failed."),
+    LIKE_CREATION_FAILED(HttpStatus.BAD_REQUEST, "Like creation failed."),
+    LIKE_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Like retrieval failed."),
+    LIKE_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Like update failed."),
+    LIKE_DELETION_FAILED(HttpStatus.BAD_REQUEST, "Like deletion failed."),
     ;
 
 

@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
 import java.sql.Timestamp;
 @Entity
 @Table(name = "recommend")
@@ -24,7 +26,9 @@ public class Recommend {
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "store_id")
   private Store store;
+  @CreationTimestamp
   private Timestamp createdAt;
+
   
 
 }
