@@ -1,4 +1,4 @@
-package com.icebear2n2.authservice.config;
+package com.icebear2n2.goodplace.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

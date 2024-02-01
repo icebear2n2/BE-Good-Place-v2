@@ -78,7 +78,7 @@ public class UserService implements UserDetailsService {
 
     public Map<String, String> authenticateUser(LoginRequest loginRequest) {
         User user = Optional.ofNullable(userRepository.findByEmail(loginRequest.getEmail()))
-                .orElseThrow(() -> new ServiceException(ErrorCode.USER_IS_UNAUTHORIZED));
+                .orElseThrow(() -> new ServiceException(ErrorCode.UNAUTHORIZED));
 
         if (!new BCryptPasswordEncoder().matches(loginRequest.getPassword(), user.getPassword())) {
             throw new ServiceException(ErrorCode.FAILED_LOGIN);
