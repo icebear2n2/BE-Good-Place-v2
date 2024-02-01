@@ -41,6 +41,10 @@ public enum ErrorCode {
     COMMENTS_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Comments retrieval failed."),
     COMMENTS_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Comments update failed."),
     COMMENTS_DELETION_FAILED(HttpStatus.BAD_REQUEST, "Comments deletion failed."),
+    STORE_INSERTION_FAILED(HttpStatus.BAD_REQUEST, "Store insertion failed."),
+    STORE_RETRIEVAL_FAILED(HttpStatus.BAD_REQUEST, "Store retrieval failed."),
+    STORE_UPDATE_FAILED(HttpStatus.BAD_REQUEST, "Store update failed."),
+    STORE_DELETION_FAILED(HttpStatus.BAD_REQUEST, "Store deletion failed."),
     ;
 
 

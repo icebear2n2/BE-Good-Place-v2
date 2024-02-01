@@ -21,8 +21,8 @@ public class Store {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long storeId;
   private String address;
-  private double coordinateX;
-  private double coordinateY;
+  private Double coordinateX;
+  private Double coordinateY;
   private String foodType;
   private String myReview;
   private String storeName;
@@ -39,4 +39,35 @@ public class Store {
   @OneToMany(mappedBy = "store", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<Recommend> recommends;
 
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public void setCoordinateX(Double coordinateX) {
+    this.coordinateX = coordinateX;
+  }
+
+  public void setCoordinateY(Double coordinateY) {
+    this.coordinateY = coordinateY;
+  }
+
+  public void setFoodType(String foodType) {
+    this.foodType = foodType;
+  }
+
+  public void setMyReview(String myReview) {
+    this.myReview = myReview;
+  }
+
+  public void setStoreName(String storeName) {
+    this.storeName = storeName;
+  }
+
+  public void setStorePhone(String storePhone) {
+    this.storePhone = storePhone;
+  }
+
+  public void setPlaceId(String placeId) {
+    this.placeId = placeId;
+  }
 }
